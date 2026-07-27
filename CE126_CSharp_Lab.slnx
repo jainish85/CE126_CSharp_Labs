@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/CE126_LAB_1/">
+    <Project Path="CE126_LAB_1/Program1_Student_Marks/Program1_Student_Marks.csproj" />
+    <Project Path="CE126_LAB_1/Program2_GuessGame/Program2_GuessGame.csproj" />
+    <Project Path="CE126_LAB_1/Program3_Calculator/Program3_Calculator.csproj" />
+  </Folder>
+  <Folder Name="/CE126_LAB_2/">
+    <Project Path="CE126_LAB_2/Program1_Collections/Program1_Collections.csproj" />
+    <Project Path="CE126_LAB_2/Program2_StudentList/Program2_StudentList.csproj" />
+    <Project Path="CE126_LAB_2/Program3_WordFrequency/Program3_WordFrequency.csproj" />
+    <Project Path="CE126_LAB_2/Program4_BrowserHistory/Program4_BrowserHistory.csproj" />
+  </Folder>
+</Solution>
