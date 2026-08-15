@@ -10,4 +10,8 @@
     <Project Path="CE126_LAB_2/Program3_WordFrequency/Program3_WordFrequency.csproj" />
     <Project Path="CE126_LAB_2/Program4_BrowserHistory/Program4_BrowserHistory.csproj" />
   </Folder>
+  <Folder Name="/CE126_LAB_3/">
+    <Project Path="CE126_LAB_3/program1_Student_LINQ_System/program1_Student_LINQ_System.csproj" />
+    <Project Path="CE126_LAB_3/Program2_Delegate_Calculator/Program2_Delegate_Calculator.csproj" Id="c89fb1aa-22bf-4c88-8dd9-65c04fb4df6c" />
+  </Folder>
 </Solution>
