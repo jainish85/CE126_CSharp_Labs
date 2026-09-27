@@ -1,0 +1,195 @@
+﻿@model ProductOrderManagement.Models.OrderViewModel
+
+@{
+    ViewData["Title"] = "Place Order";
+}
+
+<div class="container">
+
+    <h1 class="mb-4">Place Product Order</h1>
+
+    <form asp-action="Create" method="post">
+
+        <div asp-validation-summary="ModelOnly"
+             class="text-danger mb-3">
+        </div>
+
+
+        <!-- Customer Information -->
+
+        <h3>Customer Information</h3>
+
+        <div class="mb-3">
+
+            <label asp-for="CustomerName"
+                   class="form-label">
+            </label>
+
+            <input asp-for="CustomerName"
+                   class="form-control" />
+
+            <span asp-validation-for="CustomerName"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+
+        <div class="mb-3">
+
+            <label asp-for="Email"
+                   class="form-label">
+            </label>
+
+            <input asp-for="Email"
+                   class="form-control"
+                   type="email" />
+
+            <span asp-validation-for="Email"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+
+        <div class="mb-3">
+
+            <label asp-for="Phone"
+                   class="form-label">
+            </label>
+
+            <input asp-for="Phone"
+                   class="form-control" />
+
+            <span asp-validation-for="Phone"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+
+        <!-- Product Information -->
+
+        <h3 class="mt-4">
+            Product Information
+        </h3>
+
+        <div class="mb-3">
+
+            <label asp-for="ProductId"
+                   class="form-label">
+            </label>
+
+            <select asp-for="ProductId"
+                    asp-items="@ViewBag.Products"
+                    class="form-control">
+
+                <option value="">
+                    -- Select Product --
+                </option>
+
+            </select>
+
+            <span asp-validation-for="ProductId"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+
+        <div class="mb-3">
+
+            <label asp-for="Quantity"
+                   class="form-label">
+            </label>
+
+            <input asp-for="Quantity"
+                   class="form-control"
+                   type="number" />
+
+            <span asp-validation-for="Quantity"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+
+        <!-- Delivery Information -->
+
+        <h3 class="mt-4">
+            Delivery Information
+        </h3>
+
+
+        <div class="mb-3">
+
+            <label asp-for="DeliveryAddress"
+                   class="form-label">
+            </label>
+
+            <textarea asp-for="DeliveryAddress"
+                      class="form-control">
+            </textarea>
+
+            <span asp-validation-for="DeliveryAddress"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+
+        <div class="mb-3">
+
+            <label asp-for="City"
+                   class="form-label">
+            </label>
+
+            <input asp-for="City"
+                   class="form-control" />
+
+            <span asp-validation-for="City"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+
+        <div class="mb-3">
+
+            <label asp-for="Pincode"
+                   class="form-label">
+            </label>
+
+            <input asp-for="Pincode"
+                   class="form-control" />
+
+            <span asp-validation-for="Pincode"
+                  class="text-danger">
+            </span>
+
+        </div>
+
+
+        <button type="submit"
+                class="btn btn-primary">
+            Place Order
+        </button>
+
+        <button type="reset"
+                class="btn btn-secondary">
+            Clear
+        </button>
+
+    </form>
+
+</div>
+
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync(
+            "_ValidationScriptsPartial");
+    }
+
+}

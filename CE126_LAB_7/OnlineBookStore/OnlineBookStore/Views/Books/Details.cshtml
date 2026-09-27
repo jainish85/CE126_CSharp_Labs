@@ -1,0 +1,41 @@
+﻿@model OnlineBookStore.Models.Book
+
+@{
+    ViewData["Title"] = "Book Details";
+}
+
+<div class="card shadow">
+
+    <div class="card-body">
+
+        <h1>@Model.Title</h1>
+
+        <hr />
+
+        <p>
+            <strong>Author:</strong>
+            @Model.Author
+        </p>
+
+        <p>
+            <strong>Category:</strong>
+            @Model.Category
+        </p>
+
+        <p>
+            <strong>Description:</strong>
+            @Model.Description
+        </p>
+
+        <h3 class="text-success">
+            ₹@Model.Price
+        </h3>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Back to Books
+        </a>
+
+    </div>
+
+</div>

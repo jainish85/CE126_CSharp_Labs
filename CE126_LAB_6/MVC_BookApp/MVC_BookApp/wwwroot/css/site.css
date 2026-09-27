@@ -1,0 +1,100 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+
+/* BACKGROUND */
+body {
+    background: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTAINER */
+.page-container {
+    width: 70%;
+    margin: 50px auto;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* ADD BUTTON */
+.add-btn {
+    background: #27ae60;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* TABLE */
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+    /* HEADER */
+    .book-table th {
+        background: #2c3e50;
+        color: white;
+        padding: 14px;
+    }
+
+    /* ROWS */
+    .book-table td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* HOVER */
+    .book-table tr:hover {
+        background: #f9f9f9;
+    }
+
+/* BUTTONS */
+.btn {
+    padding: 

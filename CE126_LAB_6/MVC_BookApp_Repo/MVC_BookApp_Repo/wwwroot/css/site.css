@@ -1,0 +1,179 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+
+
+
+/* ===== BODY ===== */
+body {
+    background-color: #eef1f5;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+/* ===== HEADER ===== */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* ===== ADD BUTTON ===== */
+.btn-add {
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+    .btn-add:hover {
+        background-color: #219150;
+    }
+
+/* ===== TABLE ===== */
+.table {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    border-collapse: collapse;
+}
+
+    .table th {
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .table td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .table tr:hover {
+        background-color: #f8f9fa;
+    }
+
+/* ===== BUTTONS ===== */
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    margin: 2px;
+}
+
+.btn-details {
+    background-color: #3498db;
+}
+
+.btn-edit {
+    background-color: #f39c12;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+}
+
+/* ===== FORM ===== */
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+    .form-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2c3e50;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===== FORM BUTTON ===== */
+.form-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+    .form-btn:hover {
+        background-color: #1a252f;
+    }
+
+/* ===== BACK LINK ===== */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #2c3e50;
+    text-decoration: none;
+}

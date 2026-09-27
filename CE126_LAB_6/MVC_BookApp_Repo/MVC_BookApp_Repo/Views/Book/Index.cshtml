@@ -1,0 +1,33 @@
+﻿@model List<MVC_BookApp_Repo.Models.Book>
+
+<div class="container">
+
+    <div class="page-header">
+        <div class="page-title">📚 Book Management</div>
+        <a asp-action="Create" class="btn-add">+ Add Book</a>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Actions</th>
+        </tr>
+
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>@b.BookId</td>
+                <td>@b.Title</td>
+                <td>@b.Author</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@b.BookId" class="btn btn-details">Details</a>
+                    <a asp-action="Edit" asp-route-id="@b.BookId" class="btn btn-edit">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@b.BookId" class="btn btn-delete">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>

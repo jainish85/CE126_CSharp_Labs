@@ -1,0 +1,16 @@
+﻿@model IEnumerable<OnlineBookStore.Models.Book>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h1 class="mb-4">Our Books</h1>
+
+<div class="row">
+
+    @foreach (var book in Model)
+    {
+        <partial name="_BookCard" model="book" />
+    }
+
+</div>

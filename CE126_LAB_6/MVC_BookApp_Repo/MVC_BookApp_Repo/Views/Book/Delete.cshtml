@@ -1,0 +1,26 @@
+﻿@model MVC_BookApp_Repo.Models.Book
+
+<div class="container">
+
+    <div class="form-box">
+        <h2>❌ Delete Book</h2>
+
+        <p><b>Title:</b> @Model.Title</p>
+        <p><b>Author:</b> @Model.Author</p>
+        <p><b>Category:</b> @Model.Category</p>
+        <p><b>Price:</b> @Model.Price</p>
+
+        <form asp-action="Delete" method="post">
+
+            <input type="hidden" asp-for="BookId" />
+
+            <button type="submit" class="form-btn" style="background:#e74c3c;">
+                Delete
+            </button>
+
+        </form>
+
+        <a asp-action="Index" class="back-link">Cancel</a>
+    </div>
+
+</div>

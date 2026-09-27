@@ -1,0 +1,44 @@
+﻿@model MVC_BookApp_Repo.Models.Book
+
+<div class="container">
+
+    <div class="form-box">
+        <h2>✏️ Edit Book</h2>
+
+        <form asp-action="Edit" method="post">
+
+            <input type="hidden" asp-for="BookId" />
+
+            <div class="form-group">
+                <label>Title</label>
+                <input asp-for="Title" />
+            </div>
+
+            <div class="form-group">
+                <label>Author</label>
+                <input asp-for="Author" />
+            </div>
+
+            <div class="form-group">
+                <label>Category</label>
+                <input asp-for="Category" />
+            </div>
+
+            <div class="form-group">
+                <label>Price</label>
+                <input asp-for="Price" />
+            </div>
+
+            <div class="form-group">
+                <label>Published Year</label>
+                <input asp-for="PublishedYear" />
+            </div>
+
+            <button type="submit" class="form-btn">Update</button>
+
+        </form>
+
+        <a asp-action="Index" class="back-link">← Back</a>
+    </div>
+
+</div>
